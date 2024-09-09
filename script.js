@@ -3,7 +3,7 @@ let timer;
 let counting = false;
 let [hours, minutes, seconds] = [0, 0, 0];
 
-¨
+
 //Refering to elements from index.html
 const display = document.getElementById('display');
 const startStopButton = document.getElementById('startStop');
