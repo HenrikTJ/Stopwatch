@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.Stopwatch {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 30px;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 1.3em;
+  margin: 5px;
+  border: none;
+  background-color: #38b6ff;
+  color: white;
+  border-radius: 5px;
+}
+
+
+button:hover {
+  background-color: #9e0003;
+}
