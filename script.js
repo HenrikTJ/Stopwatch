@@ -3,6 +3,7 @@ let timer;
 let counting = false;
 let [hours, minutes, seconds] = [0, 0, 0];
 
+¨
 //Refering to elements from index.html
 const display = document.getElementById('display');
 const startStopButton = document.getElementById('startStop');
@@ -24,16 +25,17 @@ function startStopwatch() {
   if (!counting) {
     timer = setInterval(() => {
       seconds++;
-      if (seconds === 60) {
-        seconds = 0;
+    if (seconds === 60) {
+      seconds = 0;
         minutes++;
-        if (minutes === 60) {
-          minutes = 0;
+      if (minutes === 60) {
+        minutes = 0;
           hours++;
-        }
-      }
+       }
+     }
+
       updateDisplay();
-    }, 1000);
+  }, 1000);
 
     startStopButton.textContent = "Stop";
     counting = true;
